@@ -1,0 +1,81 @@
+.footer {
+  width: 100%;
+  padding: 20px 40px;
+  background: var(--color-white);
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.footer__logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: var(--playfair-display);
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.footer__logo span {
+  color: red;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 64px;
+}
+
+.footer ul:last-child {
+  gap: 32px;
+}
+
+.footer__nav li {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.footer__nav li:hover {
+  color: var(--primary-color);
+  transform: scale(1.05);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer__social li {
+  width: 42px;
+  height: 42px;
+  background-color: var(--secondary-color);
+  border-radius: 100%;
+}
+
+.footer__social li img {
+  width: 45%;
+  height: 45%;
+  object-fit: contain;
+}
+
+.footer__social li:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 10px 20px; /* Reduce padding on mobile */
+  }
+  
+  .footer__nav li {
+    font-size: 14px; /* Smaller font size on mobile */
+  }
+
+  .footer ul {
+    gap: 32px; /* Reduce gap between nav items */
+  }
+}

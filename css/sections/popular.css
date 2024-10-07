@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.popular-collection {
+  max-width: 100%; /* Max width for the section */
+  margin: 0 auto; /* Centering the section */
+  padding: 20px; /* Padding inside the section */
+  background-color: rgb(248, 247, 247); /* Background color for the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  display: flexbox;
+}
+
+.popular-collection__title {
+  font-size: 2.5rem; /* Font size for the title */
+  margin-bottom: 20px; /* Space below the title */
+  text-align: center; /* Center the title */
+}
+
+.popular-collection__filters {
+  display: flex; /* Flexbox for filters */
+  justify-content: center; /* Center the filters */
+  gap: 10px; /* Space between filter buttons */
+  margin-bottom: 30px; /* Space below filters */
+}
+
+.popular-collection__filter-btn {
+  padding: 10px 20px; /* Padding for buttons */
+  border: 1px solid #fdfcfc; /* Border for buttons */
+  border-radius: 5px; /* Rounded corners for buttons */
+  background-color: #fffdfd; /* Background color for buttons */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.popular-collection__filter-btn.active {
+  background-color: #FF6F61; /* Active button color */
+  color: white; /* Text color for active button */
+}
+
+.popular-collection__filter-btn:hover {
+  background-color: #e2e2e2; /* Button hover effect */
+}
+
+.popular-collection__catalogue {
+  display: grid; /* Grid layout for the product cards */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+}
+
+.popular-collection__card {
+  background-color: white; /* Card background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Padding inside the card */
+  text-align: center; /* Center text inside the card */
+  transition: transform 0.3s; /* Smooth transition */
+}
+
+.popular-collection__card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.popular-collection__card-image {
+  width: 100%; /* Full width for images */
+  height: auto; /* Auto height for images */
+  border-radius: 10px; /* Rounded corners for images */
+}
+
+.popular-collection__card-title {
+  font-size: 1.5rem; /* Font size for product name */
+  margin: 10px 0; /* Space around product name */
+}
+
+.flex-between {
+  display: flex; /* Flexbox for details */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center align items vertically */
+  margin-top: 10px; /* Space above details */
+}
+
+.popular-collection__card-rating {
+  display: flex; /* Flexbox for rating */
+  align-items: center; /* Center align items */
+}
+
+.popular-collection__card-rating img {
+  width: 20px; /* Width for star icon */
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.popular-collection__card-price {
+  font-size: 1.25rem; /* Font size for price */
+  color: #cc4d41; /* Coral red color for price */
+}
+
+.popular-collection__button {
+  display: block; /* Block display for button */
+  width: 100%; /* Full width for button */
+  padding: 15px; /* Padding for button */
+  background-color: #fac905; /* Coral red color for button */
+  color: rgb(4, 0, 0); /* Text color for button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners for button */
+  font-size: 1.25rem; /* Font size for button */
+  cursor: pointer; /* Pointer on hover */
+  margin-top: 20px; /* Space above the button */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.popular-collection__button:hover {
+  background-color: #e94e49; /* Darker shade on hover */
+}

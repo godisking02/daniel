@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light background */
+}
+
+/* Subscription Section */
+.subscription {
+  background-color: #fac905; /* Coral red background */
+  color: white; /* Text color */
+  padding: 60px 20px; /* Padding for spacing */
+  text-align: center; /* Center text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.subscription h2 {
+  font-size: 2.5rem; /* Font size for the title */
+  margin-bottom: 20px; /* Space below the title */
+  line-height: 1.4; /* Line height for title */
+}
+
+.subscription p {
+  font-size: 1.2rem; /* Font size for description */
+  margin-bottom: 30px; /* Space below the description */
+}
+
+.subscription-form {
+  display: flex; /* Flexbox layout for form */
+  justify-content: center; /* Center the form horizontally */
+  align-items: center; /* Align items vertically */
+  gap: 15px; /* Space between input and button */
+}
+
+.subscription-form input[type="email"] {
+  padding: 10px 20px; /* Padding inside input field */
+  font-size: 1rem; /* Font size for input text */
+  border-radius: 5px; /* Rounded corners for input */
+  border: none; /* Remove border */
+  width: 300px; /* Fixed width for input */
+  max-width: 100%; /* Make responsive */
+}
+
+.subscription-form button {
+  padding: 10px 30px; /* Padding inside button */
+  background-color: white; /* White background for button */
+  color: #070100; /* Coral red text color */
+  font-size: 1rem; /* Font size for button text */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.subscription-form button:hover {
+  background-color: #f1f1f1; /* Light grey background on hover */
+}
+
+.flex-center {
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center content */
+  align-items: center; /* Align items vertically */
+  flex-direction: column; /* Stack items vertically */
+}

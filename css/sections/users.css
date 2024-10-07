@@ -1,0 +1,120 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #FF6F61;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+}
+
+/* Container Styling */
+.container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings Styling */
+h2 {
+    font-size: 1.75rem;
+    color: #FF6F61;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input and Select Fields */
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #FF6F61;
+    outline: none;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Legend Styling */
+legend {
+    font-weight: bold;
+    color: #FF6F61;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+/* Button Styling */
+.btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #FF6F61;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #E55B4A;
+    transform: translateY(-3px);
+}
+
+/* Additional Styling for Small Screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
